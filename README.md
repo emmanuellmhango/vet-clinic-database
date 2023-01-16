@@ -1,8 +1,4 @@
-# curriculum-databases-projects-template
-
-> This template should be used for database related projects at Microverse.
-> Generate your own repository, update this README and edit all files content while working on projects. You should not be adding any new files unless asked otherwise.
-
+# VET CLINIC DATABASE
 
 ## Getting Started
 
@@ -206,23 +202,16 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
 
-👤 **Author1**
+👤 **Author**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@emmanuellmhango](https://github.com/emmanuellmhango)
+- LinkedIn: [@emmanuellmhango](https://linkedin.com/in/emmanuellmhango)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FUTURE FEATURES -->
+<!-- FUTURE FEATURES 
 
 ## 🔭 Future Features <a name="future-features"></a>
 
@@ -233,7 +222,7 @@ Example:
 - [ ] **[new_feature_3]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+-->
 <!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
@@ -248,9 +237,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
-If you like this project...
+If you like this project, please add a start to support us...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -258,13 +245,11 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
-
-I would like to thank...
+I would like to thank everyone who took part in supporting this project. I would like to specifically thank microverse for the guidance and assistance throughout my SE journey
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FAQ (optional) -->
+<!-- FAQ (optional) 
 
 ## ❓ FAQ <a name="faq"></a>
 
@@ -279,7 +264,7 @@ I would like to thank...
   - [Answer_2]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+-->
 <!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
