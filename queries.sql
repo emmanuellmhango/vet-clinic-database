@@ -1,4 +1,4 @@
-/*Queries that provide answers to the questions from all projects.*/
+/*Queries that provide answers to the questions FROM all projects.*/
 
 SELECT * FROM animals WHERE name LIKE '%mon';
 SELECT * FROM animals WHERE date_of_birth BETWEEN '2016-01-01' AND '2019-12-31';
@@ -48,3 +48,43 @@ COMMIT;
 
   /* 6. What is the average number of escape attempts per animal type of those born between 1990 and 2000? */
   SELECT AVG(escape_attempts) FROM animals WHERE date_of_birth BETWEEN '1990-01-01' AND '2000-12-31';
+
+  /* ===============multiple table queries ==================================*/
+
+  SELECT * FROM animals 
+    JOIN owners 
+    ON animals.owner_id = owners.id 
+    WHERE owners.full_name = 'Melody Pond';
+
+  SELECT * FROM animals 
+    JOIN species 
+    ON animals.species_id = species.id 
+    WHERE species.name = 'Pokemon';
+
+  SELECT * FROM owners 
+    LEFT JOIN animals 
+    ON owners.id = animals.owner_id;
+
+  SELECT species.name, COUNT(animals.species_id) FROM animals 
+    JOIN species 
+    ON animals.species_id = species.id 
+    GROUP BY species.name;
+
+  SELECT * FROM animals 
+    JOIN species 
+    ON animals.species_id = species.id 
+    JOIN owners 
+    ON animals.owner_id = owners.id 
+    WHERE species.name = 'Digimon' AND owners.full_name = 'Jennifer Orwell';
+
+  SELECT * FROM animals 
+    JOIN owners 
+    ON animals.owner_id = owners.id
+    WHERE owners.full_name = 'Dean Winchester' AND animals.escape_attempts = 0;
+
+  SELECT owners.full_name, COUNT(animals.owner_id) FROM animals
+    JOIN owners 
+    ON animals.owner_id = owners.id 
+    GROUP BY owners.full_name
+    ORDER BY COUNT(animals.owner_id) 
+    DESC LIMIT 1;
