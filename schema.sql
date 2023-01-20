@@ -37,3 +37,23 @@ ADD COLUMN species_id INTEGER;
 
 ALTER TABLE animals 
 ADD COLUMN owner_id INTEGER;
+
+/* ===================================================================== */
+
+CREATE TABLE vets(
+  id INT GENERATED ALWAYS AS IDENTITY, 
+  name VARCHAR(255), 
+  age INT, 
+  date_of_graduation DATE
+);
+
+CREATE TABLE specializations(
+  vets_id INT, 
+  species_id INT 
+);
+
+CREATE TABLE visits(
+  vets_id INT, 
+  animals_id INT,
+  visit_date DATE 
+);
