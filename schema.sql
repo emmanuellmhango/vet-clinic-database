@@ -57,3 +57,30 @@ CREATE TABLE visits(
   animals_id INT,
   visit_date DATE 
 );
+
+/* =================================================================*/
+
+  /* INDEXES */
+
+  ALTER TABLE visits 
+    RENAME COLUMN animals_id TO animal_id;
+
+  ALTER TABLE visits 
+    RENAME COLUMN vets_id TO vet_id;
+    
+  ALTER TABLE visits 
+    RENAME COLUMN visit_date TO date_of_visit;
+
+  CREATE INDEX visits_animal_id ON visits(animal_id ASC);
+
+  CREATE INDEX visits_vet_id ON visits(vet_id ASC);
+
+  CREATE INDEX visits_date_desc ON visits(date_of_visit DESC);
+
+  CREATE INDEX owner_full_name_asc ON owners(full_name ASC);
+
+  CREATE INDEX owner_age_asc ON owners(age ASC);
+
+  CREATE INDEX owner_email ON owners (email);
+
+
