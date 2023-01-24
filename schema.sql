@@ -81,4 +81,6 @@ CREATE TABLE visits(
 
   CREATE INDEX owner_age_asc ON owners(age ASC);
 
+  CREATE INDEX owner_email ON owners (email);
+
 
