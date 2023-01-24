@@ -178,11 +178,3 @@ SELECT a.name FROM animals a
   ORDER BY COUNT(vs.vets_id) DESC
   LIMIT 1;
 
-/* ===================================================================== */
-
-INSERT INTO visits (animals_id, vets_id, visit_date) 
-  SELECT * FROM (SELECT id FROM animals) animals_ids, 
-    (SELECT id FROM vets) vets_ids, generate_series('1980-01-01'::timestamp, '2021-01-01', '4 hours') visit_timestamp;
-
-INSERT INTO owners (full_name, email) 
-  SELECT 'Owner ' || generate_series(1,2500000), 'owner_' || generate_series(1,2500000) || '@mail.com';
