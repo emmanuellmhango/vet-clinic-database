@@ -191,3 +191,6 @@ EXPLAIN ANALYZE
 EXPLAIN ANALYZE 
   SELECT * FROM owners 
     WHERE email = 'owner_18327@mail.com';
+
+SELECT * FROM visits 
+  WHERE vet_id=2;
